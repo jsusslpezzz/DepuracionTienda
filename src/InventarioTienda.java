@@ -20,7 +20,7 @@ public class InventarioTienda {
 
 
     public void actualizarStock(String nombreProducto, int nuevoStock) {
-        for (int i = 0; i <= contador; i++) {
+        for (int i = 0; i < contador; i++) {
             if (productos[i].getNombre().equalsIgnoreCase(nombreProducto)) {
                 productos[i].setStock(nuevoStock);
                 // supondremos que solo hay un producto con ese nombre
